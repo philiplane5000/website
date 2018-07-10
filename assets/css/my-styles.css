@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+.navbar-all-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-links-container {
+    margin-right: 100px;
+}
+
+.crimson {
+    color: crimson;
+}
+
+.nav-link {
+    /* color: crimson; */
+    font-weight: 600;
+}
+
+.navbar-brand {
+    color: white;
+}
+
+.jumbotron {
+    color: white;
+    background-color: transparent;
+}
+
+.learn-more {
+    margin: auto 0;
+    padding: 10px;
+    text-align: center;
+}
+.top-row {
+    height: 45vh;
+    min-height: 400px;
+    width: 105vw;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
+}
+
+.middle-row-one {
+    margin-top: 100px;
+}
+
+.bg-image {
+    position: absolute;
+    width: 105vw;
+    min-width: 1200px;
+    top: 0;
+    z-index: -1;
+}
+
+.profile-pic {
+    width: 250px;
+}
+
+.about-me-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sub-heading {
+    color: slategray;
+}
+
+.about-me {
+    margin: 50px 0;
+    width: 80%;
+    text-align: center;
+}
