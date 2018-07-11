@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
         crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/my-styles.css" />
 </head>
 
@@ -16,9 +18,9 @@
 
     <div class="container-fluid">
         <!-- MAIN CONTAINER -->
-
-        <div class="row top-row">
-            <img src="./assets/misc/nick-cooper-731675-unsplash.jpg" alt="bg-img" class="bg-image">
+        <!-- data-scroll-index="0" data-overlay-dark="6" data-background="../misc/nick-cooper-731675-unsplash.jpg" data-stellar-background-ratio="0.5" -->
+        <div id="home" class="row top-row header bg-img" data-stellar-background-ratio="0.5">
+            <!-- <img src="./assets/misc/nick-cooper-731675-unsplash.jpg" alt="bg-img" class="bg-image" data-stellar-ratio="0.5"> -->
 
             <div class="col-12">
                 <nav class="navbar navbar-expand-lg navbar-all-container">
@@ -50,39 +52,144 @@
                     <div class="container justify-content-center">
                         <div class="col-lg-8 mx-auto">
                             <h1 class="display-4">Hello,</h1>
-                            <h5>My name is <span class="crimson">Philip Taft-Dick</span>. I'm a San Diego based full-stack web developer focused on crafting clean and user-friendly experiences.</h5>
+                            <h5>My name is
+                                <span class="crimson">Philip Taft-Dick</span>. I'm a San Diego based full-stack web developer focused on crafting
+                                clean and user-friendly experiences.</h5>
                         </div>
-                        <div class="col-2 mx-auto border mt-4"><p class="learn-more">LEARN MORE.</p></div>
+                        <div class="col-2 mx-auto border mt-4">
+                            <p class="learn-more">LEARN MORE.</p>
+                        </div>
                     </div>
                 </div>
 
             </div>
         </div>
 
-        <div class="row middle-row-one">
+        <div class="row middle-row-top">
+
             <div class="col-lg-4 col-sm-12 text-center">
-                    <img src="./assets/misc/example-profile.jfif" class="rounded profile-pic mt-5 mb-5" alt="...">
+                <img src="./assets/misc/example-profile.jfif" class="rounded profile-pic mt-5 mb-5" alt="...">
             </div>
 
             <div class="col-lg-8 col-sm-12 about-me-container">
+
                 <div class="about-me">
-                    <h3>Philip Taft-Dick</h3>
-                    <p class="sub-heading">Full Stack Web Developer</p><br>
+                    <h3 class="sub-heading sub-heading-head">Philip Taft-Dick</h3>
+                    <p class="sub-heading sub-heading-text">Full Stack Web Developer</p>
+                    <br>
 
-                    <p>I'm a freelancing web designer with 2 years of experience developing web sites and applications. I'm interested in all things web development, specializing in the most modern front-end as well as back-end technologies or languages.</p><br>
-
-                    <p>Currently, I am enrolled as a student with UCSD Extension Schools' Full-Stack Coding Bootcamp while pursuing an Amazon Web Services certification on the side.</p><br>
-
-                    <p>Professionally, I am seeking a full-stack or else front-end web developer position. I am also available and committed to designing, developing and deploying personal or professional websites for individuals or small businesses. </p>      
+                    <p class="text-lg-left text-md-left text-sm-center text-center">I'm a freelancing web designer with 2 years of experience developing web sites and applications. I'm
+                        interested in all things web development, specializing in a variety of modern front-end as well as
+                        back-end technologies or languages.
+                        <br>
+                        <br> Currently, I am enrolled as a student with UCSD Extension Schools' Full-Stack Coding Bootcamp while
+                        pursuing an Amazon Web Services certification on the side.
+                        <br>
+                        <br> I am seeking a full-stack or else front-end web developer position. I am also available and committed
+                        to designing, developing and deploying personal or professional websites for individuals or small
+                        businesses. </p>
                 </div>
             </div>
 
-
         </div>
+        <div class="row middle-row-center">
 
-        <div class="row middle-row-two">
+                    <div class="col-12 language-icons-container">
+                            <i class="fab fa-html5 fa-3x"></i>
+                            <i class="fab fa-css3 fa-3x"></i>
+                            <i class="fab fa-js fa-3x"></i>
+                            <i class="fab fa-node fa-3x"></i>
+                            <i class="fab fa-aws fa-3x"></i>
 
-            <!--PORTFOLIO-SECTION-->
+                    </div>
+    
+            </div>
+            
+        <div class="row middle-row-bottom">
+
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <section class="head">
+                            <h4>My Portfolio</h4>
+                        </section>
+                    </div>
+                </div>
+
+
+
+                <div class="row justify-content-center">
+
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="http://via.placeholder.com/250x250" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary card-btn">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="http://via.placeholder.com/250x250" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary card-btn">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="http://via.placeholder.com/250x250" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary card-btn">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="http://via.placeholder.com/250x250" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary card-btn">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="http://via.placeholder.com/250x250" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary card-btn">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="http://via.placeholder.com/250x250" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary card-btn">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
 
 
         </div>
@@ -100,15 +207,18 @@
     </div>
 
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
-
-    <script src="./assets/js/my-script.js"></script>
+    <!-- OLDER VERSION OF JQUERY FOR STELLAR-JS -->
+    <script src="./assets/js/old-jquery.js"></script>
+    <!-- STELLAR JS -->
+    <script src="./assets/js/jquery.stellar.min.js"></script>
     <!--MY SCRIPT HERE-->
+    <script src="./assets/js/my-script.js"></script>
 </body>
 
 </html>

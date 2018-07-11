@@ -2,7 +2,13 @@
     box-sizing: border-box;
 }
 
+html {
+    background-color: darkslategray;
+}
 
+body {
+    font-family: 'Muli', sans-serif;
+}
 
 .navbar-all-container {
     display: flex;
@@ -36,24 +42,26 @@
     padding: 10px;
     text-align: center;
 }
+
+.bg-img {
+    background-image: url('../misc/nick-cooper-731675-unsplash-1600w.jpg');
+}
+
+header {
+    background-attachment: fixed;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    height: 105vh;
+    position: relative;
+}
+
 .top-row {
-    height: 45vh;
-    min-height: 400px;
-    width: 105vw;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
     clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
 }
 
-.middle-row-one {
-    margin-top: 100px;
-}
-
-.bg-image {
-    position: absolute;
-    width: 105vw;
-    min-width: 1200px;
-    top: 0;
-    z-index: -1;
+.middle-row-top, .middle-row-center, .middle-row-bottom {
+    margin-top: 50px;
 }
 
 .profile-pic {
@@ -62,15 +70,64 @@
 
 .about-me-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
 }
 
-.sub-heading {
+.sub-heading p {
     color: slategray;
+}
+
+.about-me-container {
+    display: flex;
+    justify-content: center;
 }
 
 .about-me {
     margin: 50px 0;
-    width: 80%;
+    width: 90%;
+}
+
+.head {
+    display: flex;
+    justify-content: center;
     text-align: center;
+    margin: 20px 0;
+}
+.head h4 {
+    line-height: 50px;
+    border-bottom: 1.5px solid #307652;
+}
+
+.sub-heading {
+    text-align: center;
+}
+
+.sub-heading-text {
+    color: #307652;
+}
+
+.card {
+    margin-top: 40px;
+}
+
+.card-btn {
+    background-color: #4fc287;
+    border: none;
+}
+
+.card-btn:hover, .card-btn:active {
+    background-color: #307652;
+}
+
+.language-icons-container {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(137, 194, 165, 0.35);
+    opacity: 0.5;
+    height: 25vh;
+    width: 100%;
+}
+
+.language-icons-container i {
+    margin: 10vh;
 }
