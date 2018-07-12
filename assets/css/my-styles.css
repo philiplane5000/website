@@ -98,6 +98,10 @@ header {
     border-bottom: 1.5px solid #307652;
 }
 
+.header {
+    height: 95vh;
+}
+
 .sub-heading {
     text-align: center;
 }
@@ -126,6 +130,15 @@ header {
     opacity: 0.5;
     height: 25vh;
     width: 100%;
+}
+
+.port-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-btn {
+    width: 45%;
 }
 
 .language-icons-container i {
