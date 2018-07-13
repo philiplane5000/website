@@ -23,25 +23,23 @@
         <div id="home" class="row top-row header bg-img" data-stellar-background-ratio="0.5">
             <!-- <img src="./assets/misc/nick-cooper-731675-unsplash.jpg" alt="bg-img" class="bg-image" data-stellar-ratio="0.5"> -->
 
-            <div class="col-12">
+            <div class="row nav-row">
                 <nav class="navbar navbar-expand-lg navbar-all-container">
                     <div class="navbar-brand-container">
                         <a class="navbar-brand" href="#">PHILIP R. TAFT-DICK</a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
                             aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
-                        </button>
+                        </button> -->
                     </div>
                     <div class="navbar-links-container">
-                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                            <div class="navbar-nav">
-                                <a class="nav-item nav-link active crimson" href="#">Home
-                                    <span class="sr-only">(current)</span>
-                                </a>
-                                <a class="nav-item nav-link crimson" href="#">About</a>
-                                <a class="nav-item nav-link crimson" href="#">Portfolio</a>
-                                <a class="nav-item nav-link crimson" href="#">Contact</a>
-                            </div>
+                        <div class="navbar-nav">
+                            <a class="nav-item nav-link active" href="#">Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                            <a class="nav-item nav-link" href="#">About</a>
+                            <a class="nav-item nav-link" href="#">Portfolio</a>
+                            <a class="nav-item nav-link" href="#">Contact</a>
                         </div>
                     </div>
                 </nav>
@@ -50,11 +48,11 @@
             <div class="col-12">
 
                 <div class="jumbotron jumbotron-fluid">
-                    <div class="container justify-content-center">
+                    <div class="container justify-content-center jumbo-blurb-container">
                         <div class="col-lg-8 mx-auto">
                             <h1 class="display-4">Hello,</h1>
                             <h5>My name is
-                                <span class="crimson">Philip Taft-Dick</span>. I'm a San Diego based full-stack web developer focused on crafting
+                                <span class="pink-inverse">Philip Taft-Dick</span>. I'm a San Diego based full-stack web developer focused on crafting
                                 clean and user-friendly experiences.</h5>
                         </div>
                         <div class="col-2 mx-auto border mt-4">
@@ -75,8 +73,8 @@
             <div class="col-lg-8 col-sm-12 about-me-container">
 
                 <div class="about-me">
-                    <h3 class="sub-heading sub-heading-head">Philip Taft-Dick</h3>
-                    <p class="sub-heading sub-heading-text">Full Stack Web Developer</p>
+                    <h3 class="sub-heading">Philip Taft-Dick</h3>
+                    <p class="sub-heading pink-one">Full Stack Web Developer</p>
                     <br>
 
                     <p class="text-lg-left text-md-left text-sm-center text-center">I'm a freelancing web designer with 2 years of experience developing web sites and applications. I'm
@@ -112,7 +110,7 @@
                 <div class="row justify-content-center">
                     <div class="col-12">
                         <section class="head">
-                            <h4>My Portfolio</h4>
+                            <h4 class="title-head">My Portfolio</h4>
                         </section>
                     </div>
                 </div>
@@ -124,8 +122,11 @@
                             <img class="card-img-top" src="./assets/imgs/the-mixer-02-550W.png" alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title">The Mixer</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary card-btn">LIVE</a>
+                                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                                <div class="port-buttons">
+                                    <a href="https://philiptd5000.github.io/the-mixer/" target="_blank" class="btn btn-primary card-btn">PREVIEW</a>
+                                    <a href="https://github.com/philiptd5000/the-mixer" target="_blank" class="btn btn-secondary card-btn-git">GITHUB</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -135,10 +136,10 @@
                             <img class="card-img-top" src="./assets/imgs/giphy-logo-550W.png" alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title">Giphtastic-Browser</h5>
-                                <p class="card-text">Generate dynamic buttons to easily discover your favorite gifs utilizing the Giphy API. </p>
+                                <!-- <p class="card-text">Generate dynamic buttons to easily discover your favorite gifs utilizing the Giphy API. </p> -->
                                 <div class="port-buttons">
-                                    <a href="https://philiptd5000.github.io/Giftastic-Browser/" class="btn btn-primary card-btn">LIVE</a>
-                                    <a href="https://github.com/philiptd5000/Giftastic-Browser" class="btn btn-secondary card-btn">GITHUB</a>
+                                    <a href="https://philiptd5000.github.io/Giftastic-Browser/" target="_blank" class="btn btn-primary card-btn">PREVIEW</a>
+                                    <a href="https://github.com/philiptd5000/Giftastic-Browser" target="_blank" class="btn btn-secondary card-btn-git">GITHUB</a>
                                 </div>
                             </div>
                         </div>
@@ -149,32 +150,39 @@
                             <img class="card-img-top" src="./assets/imgs/train-alt-550W.png" alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title">Train Scheduler</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary card-btn">LIVE</a>
+                                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                                <div class="port-buttons">
+                                    <a href="https://philiptd5000.github.io/train-scheduler/" target="_blank" class="btn btn-primary card-btn">PREVIEW</a>
+                                    <a href="https://github.com/philiptd5000/train-scheduler" target="_blank" class="btn btn-secondary card-btn-git">GITHUB</a>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="./assets/imgs/crown-550W.png"
-                                alt="Card image cap">
+                            <img class="card-img-top" src="./assets/imgs/crown-550W.png" alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title">Trivia Game</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary card-btn">LIVE</a>
+                                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                                <div class="port-buttons">
+                                    <a href="https://philiptd5000.github.io/TriviaGame/" target="_blank" class="btn btn-primary card-btn">PREVIEW</a>
+                                    <a href="https://github.com/philiptd5000/TriviaGame" target="_blank" class="btn btn-secondary card-btn-git">GITHUB</a>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="./assets/imgs/star-wars-550W.png"
-                                alt="Card image cap">
+                            <img class="card-img-top" src="./assets/imgs/star-wars-550W.png" alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title">Star Wars RPG</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary card-btn">LIVE</a>
+                                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                                <div class="port-buttons">
+                                    <a href="https://philiptd5000.github.io/unit-4-game/" target="_blank" class="btn btn-primary card-btn">PREVIEW</a>
+                                    <a href="https://github.com/philiptd5000/unit-4-game" target="_blank" class="btn btn-secondary card-btn-git">GITHUB</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -184,8 +192,11 @@
                             <img class="card-img-top" src="./assets/imgs/dino-hangman-550W.png" alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title">Dino-Hangman</h5>
-                                <p class="card-text">A dinosaur-themed game of hangman.</p>
-                                <a href="#" class="btn btn-primary card-btn">LIVE</a>
+                                <!-- <p class="card-text">A dinosaur-themed game of hangman.</p> -->
+                                <div class="port-buttons">
+                                    <a href="https://philiptd5000.github.io/Hangman/" target="_blank" class="btn btn-primary card-btn">PREVIEW</a>
+                                    <a href="https://github.com/philiptd5000/Hangman" target="_blank" class="btn btn-secondary card-btn-git">GITHUB</a>
+                                </div>
                             </div>
                         </div>
                     </div>

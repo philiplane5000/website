@@ -10,22 +10,87 @@ body {
     font-family: 'Muli', sans-serif;
 }
 
+.nav-row {
+    height: 90px;
+}
+
 .navbar-all-container {
+    width: 100vw;
+    height: 85px;
     display: flex;
     justify-content: space-between;
 }
 
 .navbar-links-container {
-    margin-right: 100px;
+    flex: 1;
+    padding-right: 50px;
 }
 
-.crimson {
-    color: crimson;
+.navbar-brand-container {
+    flex: 1;
+    padding-left: 50px;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: flex-end;
+    /* padding-right: 50px; */
+}
+
+/* COLORS: */
+
+.pink-inverse {
+    color: #41A6C1;
+}
+
+.pink-one{
+    color: #BD3D48;
+}
+
+.pink-two{
+    color: #8F212E;
+}
+
+.pink-three{
+    color: #C24856;
+}
+
+.pink-four {
+    color: #BF9195;
+}
+
+.pink-five {
+    color: #BFB7B7;
+}
+
+/* end colors */
+
+
+.jumbo-blurb-container {
+    padding: 50px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.15);
 }
 
 .nav-link {
-    /* color: crimson; */
     font-weight: 600;
+    color: white;
+    padding: 0 10px;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+/* ON NAV-LINK:HOVER CREATE JQUERY EFFECT OF SHOWING BELOW: */
+.title-head:after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 45px; /* Change this to whatever width you want. */
+    padding-top: 2px; /* This creates some space between the element and the border. */
+    border-bottom: 2px solid #8F212E; /* This creates the border. Replace black with whatever color you want. */
 }
 
 .navbar-brand {
@@ -44,18 +109,13 @@ body {
 }
 
 .bg-img {
-    background-image: url('../imgs/plants-bg-nick-cooper-unsplash.jpg');
-}
-
-header {
-    background-attachment: fixed;
-    background-position: 50% 0;
+    background-image: url('../imgs/bg/red-brick-ALT01.png');
     background-repeat: no-repeat;
-    height: 105vh;
-    position: relative;
+    /* background-size: fill; */
 }
 
 .top-row {
+    height: 70vh;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
     clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
 }
@@ -95,51 +155,47 @@ header {
 }
 .head h4 {
     line-height: 50px;
-    border-bottom: 1.5px solid #307652;
-}
-
-.header {
-    height: 95vh;
 }
 
 .sub-heading {
     text-align: center;
 }
 
-.sub-heading-text {
-    color: #307652;
-}
-
 .card {
     margin-top: 40px;
 }
 
+.port-buttons {
+    display: flex;
+    justify-content: flex-start;
+    margin: 15px 0 10px 0;
+}
+
 .card-btn {
-    background-color: #4fc287;
+    background-color: #BD3D48;
     border: none;
+    flex: .40;
+    margin-right: 20px;
+}
+
+.card-btn-git {
+    background-color: #171516;
+    flex: .40;
 }
 
 .card-btn:hover, .card-btn:active {
-    background-color: #307652;
+    background-color: #8F212E;
 }
 
 .language-icons-container {
     display: flex;
     justify-content: center;
-    background-color: rgba(137, 194, 165, 0.35);
+    background-color: rgba(191, 183, 183, 0.25);
     opacity: 0.5;
     height: 25vh;
     width: 100%;
 }
 
-.port-buttons {
-    display: flex;
-    justify-content: space-between;
-}
-
-.card-btn {
-    width: 45%;
-}
 
 .language-icons-container i {
     margin: 10vh;
