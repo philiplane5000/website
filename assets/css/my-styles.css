@@ -10,33 +10,6 @@ body {
     font-family: 'Muli', sans-serif;
 }
 
-.nav-row {
-    height: 90px;
-}
-
-.navbar-all-container {
-    width: 100vw;
-    height: 85px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.navbar-links-container {
-    flex: 1;
-    padding-right: 50px;
-}
-
-.navbar-brand-container {
-    flex: 1;
-    padding-left: 50px;
-}
-
-.navbar-nav {
-    display: flex;
-    justify-content: flex-end;
-    /* padding-right: 50px; */
-}
-
 /* COLORS: */
 
 .pink-inverse {
@@ -65,6 +38,9 @@ body {
 
 /* end colors */
 
+.jumbotron, .jumbotron-fluid {
+    margin-top: 5vw;
+}
 
 .jumbo-blurb-container {
     padding: 50px;
@@ -93,7 +69,10 @@ body {
     border-bottom: 2px solid #8F212E; /* This creates the border. Replace black with whatever color you want. */
 }
 
-.navbar-brand {
+.navbar-brand,
+.navbar-brand:hover,
+.navbar-brand:focus,
+.navbar-brand:active  {
     color: white;
 }
 
@@ -102,26 +81,65 @@ body {
     background-color: transparent;
 }
 
+.learn-more-container {
+    min-width: 115px;
+    border: 1px solid white;
+}
+
 .learn-more {
     margin: auto 0;
     padding: 10px;
     text-align: center;
 }
 
+[name="about-me"] {
+    position: relative;
+    top: -125px;
+}
+
+[href="#about-me"] {
+    color: white;
+    text-decoration: none;
+
+}
+
+[href="#about-me"]:hover, 
+[href="#about-me"]:focus, 
+[href="#about-me"]:active,
+.learn-more-container:hover,
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:active {
+    transition: all 1s;
+    color: #41A6C1;
+    text-decoration: none;
+}   
+
 .bg-img {
     background-image: url('../imgs/bg/red-brick-ALT01.png');
     background-repeat: no-repeat;
+    z-index: 20;
     /* background-size: fill; */
 }
 
 .top-row {
-    height: 70vh;
+    height: 72.5vh;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
     clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
 }
 
-.middle-row-top, .middle-row-center, .middle-row-bottom {
+.middle-row-top {
+    z-index: 5;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.middle-row-center, .middle-row-bottom {
     margin-top: 50px;
+}
+
+.middle-row-bottom {
+    margin-bottom: 150px;
 }
 
 .profile-pic {
@@ -130,16 +148,26 @@ body {
 
 .about-me-container {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
+.contact-info-container {
+    height: 75px;
+    vertical-align: middle;
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    flex: 50%;
+    text-align: left;
+    line-height: 20px;
+}
 .sub-heading p {
     color: slategray;
-}
-
-.about-me-container {
-    display: flex;
-    justify-content: center;
 }
 
 .about-me {
@@ -147,17 +175,18 @@ body {
     width: 90%;
 }
 
-.head {
+.section-head {
     display: flex;
     justify-content: center;
     text-align: center;
     margin: 20px 0;
 }
-.head h4 {
+
+.section-head h4 {
     line-height: 50px;
 }
 
-.sub-heading {
+.sub-section-heading {
     text-align: center;
 }
 
@@ -196,7 +225,22 @@ body {
     width: 100%;
 }
 
-
 .language-icons-container i {
     margin: 10vh;
+}
+
+.footer-flex {
+    font-family: 'Source Code Pro', monospace;
+    max-width: 650px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-link-icon {
+    color: darkslategray;
+    flex: 1;
+}
+
+.footer a:hover, {
+    color: #41A6C1 !important;
 }
