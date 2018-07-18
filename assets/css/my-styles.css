@@ -39,7 +39,7 @@ body {
 /* end colors */
 
 .jumbotron, .jumbotron-fluid {
-    margin-top: 5vw;
+    margin-top: -25px;
 }
 
 .jumbo-blurb-container {
@@ -142,8 +142,14 @@ body {
     margin-bottom: 150px;
 }
 
+.profile-pic-col {
+    display: block;
+}
+
 .profile-pic {
-    width: 250px;
+    display: block;
+    margin: 150px auto;
+    width: 150px;
 }
 
 .about-me-container {
@@ -166,6 +172,11 @@ body {
     text-align: left;
     line-height: 20px;
 }
+
+.sub-heading {
+    text-align: center;
+}
+
 .sub-heading p {
     color: slategray;
 }
@@ -244,3 +255,17 @@ body {
 .footer a:hover, {
     color: #41A6C1 !important;
 }
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+    .profile-pic {
+      margin-top: 25px;
+    }
+  }
+  
+  /* On screens that are 600px or less, set the background color to olive */
+  @media screen and (max-width: 600px) {
+    .profile-pic {
+        margin-top: none;
+      }
+  }
