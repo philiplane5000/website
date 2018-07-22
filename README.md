@@ -1,10 +1,8 @@
-# my-portfolio
+# MY-PORTFOLIO-PAGE
 
-###Email: 
-`philiptaft9@gmail.com`
+#### Email: philiptaft9@gmail.com
 
-###Phone:
-`619-455-3233`
+#### Phone: 619-455-3233
 
 
 
