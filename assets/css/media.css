@@ -11,9 +11,12 @@
     .header-greeting {
         font-size: 2.6rem;
     }
+    .learn-more {
+        font-size: 1.4rem;
+    }
     .learn-more-container {
         font-size: 1.4rem;
-        min-width: 125px;
+        min-width: 175px;
     }
   }
 /* //SMARTPHONE LANDSCAPE */
