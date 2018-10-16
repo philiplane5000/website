@@ -1,0 +1,43 @@
+/* // iPad */
+/* On screens that are at most 992px and at least 481px wide: */
+@media screen and (max-width: 992px) and (min-width: 481px) {
+    .top-row {
+        height: 625px;
+        padding-bottom: 40px;
+    }
+    .header-intro {
+        font-size: 1.6rem;
+    }
+    .header-greeting {
+        font-size: 2.6rem;
+    }
+    .learn-more-container {
+        font-size: 1.4rem;
+        min-width: 125px;
+    }
+  }
+/* //SMARTPHONE LANDSCAPE */
+  /* On screens that are at most 480px wide: */
+@media screen and (max-width: 480px) and (min-width: 321px) {
+    .top-row {
+        height: 425px;
+    }
+    .header-greeting {
+        font-size: 1.8rem;
+    }
+    .header-intro {
+        font-size: 1.2rem;
+    }
+  }
+/* //SMARTPHONE PORTRAIT */
+  /* On screens that are at most 320px wide: */
+@media screen and (max-width: 320px) {
+    .header-intro {
+        font-size: 1.8rem;
+      }
+    .hello {
+        display: none;
+    }
+  }
+
+  /* //320px smart phones */

@@ -3,6 +3,7 @@
 }
 
 html {
+    font-size: 10px;
     background-color: darkslategray;
 }
 
@@ -39,7 +40,7 @@ body {
 /* end colors */
 
 .jumbotron, .jumbotron-fluid {
-    margin-top: -25px;
+    margin-top: -20px;
 }
 
 .jumbo-blurb-container {
@@ -50,9 +51,10 @@ body {
 }
 
 .nav-link {
+    font-size: 1.8rem;
     font-weight: 600;
     color: white;
-    padding: 0 10px;
+    padding: 0 12.5px;
 }
 
 .nav-link:hover {
@@ -73,7 +75,14 @@ body {
 .navbar-brand:hover,
 .navbar-brand:focus,
 .navbar-brand:active  {
+    font-size: 2rem;
     color: white;
+}
+
+.top-row {
+    height: 675px;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
 }
 
 .jumbotron {
@@ -81,15 +90,25 @@ body {
     background-color: transparent;
 }
 
-.learn-more-container {
-    min-width: 115px;
-    border: 1px solid white;
+.header-greeting {
+    font-size: 3.2rem;
+}
+
+.header-intro {
+    font-size: 2rem;
 }
 
 .learn-more {
+    font-size: 1.6rem;
     margin: auto 0;
     padding: 10px;
     text-align: center;
+}
+
+.learn-more-container {
+    min-width: 150px;
+    margin-top: 15px;
+    border: 1px solid white;
 }
 
 [name="about-me"] {
@@ -120,12 +139,6 @@ body {
     background-repeat: no-repeat;
     z-index: 20;
     /* background-size: fill; */
-}
-
-.top-row {
-    height: 72.5vh;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
 }
 
 .middle-row-top {
@@ -262,16 +275,3 @@ body {
     color: #41A6C1 !important;
 }
 
-/* On screens that are 992px or less, set the background color to blue */
-@media screen and (max-width: 992px) {
-    .profile-pic {
-      margin-top: 25px;
-    }
-  }
-  
-  /* On screens that are 600px or less, set the background color to olive */
-  @media screen and (max-width: 600px) {
-    .profile-pic {
-        margin-top: none;
-      }
-  }
