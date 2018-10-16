@@ -1,6 +1,6 @@
 /* // iPad */
-/* On screens that are at most 992px and at least 481px wide: */
-@media screen and (max-width: 992px) and (min-width: 481px) {
+/* On screens that are at most 992px and at least 540px wide: */
+@media screen and (max-width: 992px) {
     .top-row {
         height: 625px;
         padding-bottom: 40px;
@@ -17,8 +17,8 @@
     }
   }
 /* //SMARTPHONE LANDSCAPE */
-  /* On screens that are at most 480px wide: */
-@media screen and (max-width: 480px) and (min-width: 321px) {
+  /* On screens that are at most 540px wide: */
+@media screen and (max-width: 540px) {
     .top-row {
         height: 425px;
     }
@@ -27,6 +27,18 @@
     }
     .header-intro {
         font-size: 1.2rem;
+    }
+    .profile-pic {
+        height: 200px;
+        width: 200px;
+    }
+    .contact-info-container {
+        flex-direction: column;
+    }
+    .contact-item {
+        margin-left: 2em;
+        padding: .25em;
+        flex: 1;
     }
   }
 /* //SMARTPHONE PORTRAIT */

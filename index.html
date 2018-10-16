@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css?family=Muli:300,400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/my-styles.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/media.css">
     <link rel="stylesheet" href="./assets/css/sticky-footer.css">
 </head>
 
@@ -23,9 +24,9 @@
         <div id="home" class="row top-row header bg-img" data-stellar-background-ratio="0.5">
 
             <!-- BEGIN BOOTSTRAP NAVBAR: -->
-            <header>
+            <div class="navbar-outer-wrapper">
                 <!-- Fixed navbar -->
-                <nav class="navbar navbar-expand-lg">
+                <nav class="navbar navbar-expand-sm justify-content-between">
                     <a class="navbar-brand" href="#">PHILIP R. TAFT-DICK</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
                         aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,23 +51,23 @@
                         </ul>
                     </div>
                 </nav>
-            </header>
+            </div>
             <!-- END BOOTSTRAP NAVBAR! -->
             <div class="col-12">
 
                 <div class="jumbotron jumbotron-fluid">
                     <div class="container justify-content-center jumbo-blurb-container">
-                        <div class="col-lg-8 mx-auto">
-                            <h1 class="display-4">Hello,</h1>
-                            <h5>My name is
+
+                        <div class="col-lg-8 mx-auto header-intro">
+                            <h1 class="header-greeting">Hello,</h1>
+                            <h5 class="header-intro">My name is
                                 <span class="pink-inverse">Philip Taft-Dick</span>. I'm a San Diego based full-stack
                                 web developer focused on crafting
                                 clean and user-friendly experiences.</h5>
-
-
                         </div>
+
                         <a href="#about-me">
-                            <div class="col-2 mx-auto mt-4 learn-more-container">
+                            <div class="col-2 mx-auto learn-more-container">
                                 <p class="learn-more">LEARN MORE.</p>
                             </div>
                         </a>
@@ -76,38 +77,47 @@
             </div>
         </div>
 
-        <div class="row middle-row-top">
+        <div class="row upper-middle-row">
+            <a name="about-me"></a>
 
-            <div class="col-lg-4 col-sm-12 profile-pic-col">
-                <img src="./assets/imgs/profile-pic-500W.png" class="profile-pic rounded-circle" alt="...">
+            <div class="col-lg-4 col-md-12 col-sm-12 d-flex justify-content-center mt-6 mb-4">
+                <img src="./assets/imgs/profile-pic-500W.png" class="profile-pic rounded-circle" alt="Profile-Picture">
             </div>
 
-            <div class="col-lg-8 col-sm-12 about-me-container">
+            <div class="col-lg-8 col-sm-12 about-me-outer-wrapper">
                 <div class="about-me">
-                    <a name="about-me"></a>
                     <a name="contact"></a>
-                    <h3 class="sub-heading">Philip Taft-Dick</h3>
+                    <h3 class="sub-heading">About</h3>
                     <p class="sub-heading pink-one">Full Stack Web Developer</p>
                     <br>
-
-                    <p class="text-lg-left text-md-left text-sm-center text-center">I'm a freelancing web designer with
-                        2 years of experience developing web sites and applications. I'm
-                        interested in all things web development, specializing in a variety of modern front-end as well
-                        as
-                        back-end technologies or languages.
-                        <br>
-                        <br> Currently, I am enrolled as a student with UCSD Extension Schools' Full-Stack Coding
-                        Bootcamp while
-                        pursuing an Amazon Web Services certification on the side.
-                        <br>
-                        <br> I am seeking a full-stack or else front-end web developer position. I am also available
-                        and committed
-                        to designing, developing and deploying personal or professional websites for individuals or
-                        small
-                        businesses. </p>
+                    <div class="p-4">
+                        <p class="text-lg-left text-md-left text-sm-center text-center">I'm a freelancing web designer
+                            with
+                            2 years of experience developing web sites and applications. I'm
+                            interested in all things web development, specializing in a variety of modern front-end as
+                            well
+                            as
+                            back-end technologies or languages.
+                            <br>
+                            <br> Currently, I am enrolled as a student with UCSD Extension Schools' Full-Stack Coding
+                            Bootcamp while
+                            pursuing an Amazon Web Services certification on the side.
+                            <br>
+                            <br> I am seeking a full-stack or else front-end web developer position. I am also
+                            available
+                            and committed
+                            to designing, developing and deploying personal or professional websites for individuals or
+                            small
+                            businesses. </p>
+                    </div>
                 </div>
+            </div>
+        </div>
 
-                <div class="contact-info-container">
+        <div class="row justify-content-end">
+            <div class="col-lg-8 col-sm-12">
+
+                <div class="contact-info-container p-4">
                     <h6 class="contact-item">
                         <strong>Email:</strong>&nbsp;philiptaft9@gmail.com</h6>
                     <h6 class="contact-item">
@@ -120,21 +130,19 @@
                         <strong>LinkedIn</strong>&nbsp;
                         <a href="https://www.linkedin.com/in/philip-taft-dick-6b4082159" target="_blank">@/philip-taft-dick</a>
                     </h6>
-                    <!-- <h6 class="contact-item"></h6> -->
                 </div>
             </div>
         </div>
 
         <div class="row middle-row-center">
 
-            <div class="col-12 language-icons-container">
-                <i class="fab fa-html5 fa-3x"></i>
-                <i class="fab fa-css3 fa-3x"></i>
-                <i class="fab fa-js fa-3x"></i>
-                <i class="fab fa-node fa-3x"></i>
-                <i class="fab fa-aws fa-3x"></i>
-            </div>
-
+                <div class="col-12 icons-container">
+                    <i class="fab fa-html5 fa-3x"></i>
+                    <i class="fab fa-css3 fa-3x"></i>
+                    <i class="fab fa-js fa-3x"></i>
+                    <i class="fab fa-node fa-3x"></i>
+                    <i class="fab fa-aws fa-3x"></i>
+                </div>
         </div>
 
         <div class="row middle-row-bottom">
@@ -151,7 +159,7 @@
 
                 <div class="row justify-content-center">
 
-                    <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4">
                         <div class="card" style="width: 18rem;">
                             <img class="card-img-top" src="./assets/imgs/kep-550W.jpg" alt="Card image cap">
                             <div class="card-body">
@@ -165,7 +173,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4">
                         <div class="card" style="width: 18rem;">
                             <img class="card-img-top" src="./assets/imgs/tech-news-scraper-550W.jpg" alt="Card image cap">
                             <div class="card-body">
@@ -179,7 +187,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4">
                         <div class="card" style="width: 18rem;">
                             <img class="card-img-top" src="./assets/imgs/the-mixer-02-550W.png" alt="Card image cap">
                             <div class="card-body">
@@ -193,7 +201,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4">
                         <div class="card" style="width: 18rem;">
                             <img class="card-img-top" src="./assets/imgs/giphy-logo-550W.png" alt="Card image cap">
                             <div class="card-body">
@@ -209,7 +217,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4">
                         <div class="card" style="width: 18rem;">
                             <img class="card-img-top" src="./assets/imgs/train-alt-550W.png" alt="Card image cap">
                             <div class="card-body">
@@ -223,7 +231,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4">
                         <div class="card" style="width: 18rem;">
                             <img class="card-img-top" src="./assets/imgs/friends-550W.png" alt="Card image cap">
                             <div class="card-body">
@@ -237,7 +245,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4">
                         <div class="card" style="width: 18rem;">
                             <img class="card-img-top" src="./assets/imgs/crown-550W.png" alt="Card image cap">
                             <div class="card-body">
@@ -251,7 +259,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4">
                         <div class="card" style="width: 18rem;">
                             <img class="card-img-top" src="./assets/imgs/star-wars-550W.png" alt="Card image cap">
                             <div class="card-body">
@@ -266,7 +274,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4">
                         <div class="card" style="width: 18rem;">
                             <img class="card-img-top" src="./assets/imgs/burger-knife-550W.png" alt="Card image cap">
                             <div class="card-body">
@@ -280,21 +288,7 @@
                         </div>
                     </div>
 
-                    <!-- <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="./assets/imgs/crown-550W.png" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Trivia Game</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <div class="port-buttons">
-                                    <a href="https://philiptd5000.github.io/trivia-game-GOT/" target="_blank" class="btn btn-primary card-btn">PREVIEW</a>
-                                    <a href="https://github.com/philiptd5000/trivia-game-GOT" target="_blank" class="btn btn-secondary card-btn-git">GITHUB</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-
-                    <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4">
                         <div class="card" style="width: 18rem;">
                             <img class="card-img-top" src="./assets/imgs/dino-hangman-550W.png" alt="Card image cap">
                             <div class="card-body">
@@ -308,7 +302,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4">
                         <div class="card" style="width: 18rem;">
                             <img class="card-img-top" src="./assets/imgs/command-line-550W.png" alt="Card image cap">
                             <div class="card-body">
@@ -322,7 +316,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-4">
                         <div class="card" style="width: 18rem;">
                             <img class="card-img-top" src="./assets/imgs/open-store-550W.png" alt="Card image cap">
                             <div class="card-body">
@@ -354,7 +348,7 @@
                 <a href="https://www.linkedin.com/in/philip-taft-dick-6b4082159" target="_blank">
                     <i class="fab fa-linkedin footer-link-icon fa-2x" target="_blank"></i>
                 </a>
-                <a href="#top" class="pink-one" target="_blank">
+                <a href="#top" class="pink-one">
                     <i class="fas fa-arrow-up fa-lg"></i>
                 </a>
                 <a href="https://github.com/philiptd5000" class="pink-one" target="_blank">

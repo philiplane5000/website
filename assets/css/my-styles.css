@@ -12,7 +12,6 @@ body {
 }
 
 /* COLORS: */
-
 .pink-inverse {
     color: #41A6C1;
 }
@@ -36,18 +35,15 @@ body {
 .pink-five {
     color: #BFB7B7;
 }
-
 /* end colors */
 
-.jumbotron, .jumbotron-fluid {
-    margin-top: -20px;
+.navbar-outer-wrapper {
+    width: 100%;
+    height: 80px;
 }
 
-.jumbo-blurb-container {
-    padding: 50px;
-    border: 2px solid white;
-    border-radius: 10px;
-    background-color: rgba(0,0,0,0.15);
+.navbar-nav {
+    margin-left: 10px;
 }
 
 .nav-link {
@@ -61,16 +57,6 @@ body {
     color: white;
 }
 
-/* ON NAV-LINK:HOVER CREATE JQUERY EFFECT OF SHOWING BELOW: */
-.title-head:after {
-    content: ""; /* This is necessary for the pseudo element to work. */ 
-    display: block; /* This will put the pseudo element on its own line. */
-    margin: 0 auto; /* This will center the border. */
-    width: 45px; /* Change this to whatever width you want. */
-    padding-top: 2px; /* This creates some space between the element and the border. */
-    border-bottom: 2px solid #8F212E; /* This creates the border. Replace black with whatever color you want. */
-}
-
 .navbar-brand,
 .navbar-brand:hover,
 .navbar-brand:focus,
@@ -80,11 +66,21 @@ body {
 }
 
 .top-row {
-    height: 675px;
+    height: 750px;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
     clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
 }
 
+.jumbotron, .jumbotron-fluid {
+    margin-top: -20px;
+}
+
+.jumbo-blurb-container {
+    padding: 50px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.15);
+}
 .jumbotron {
     color: white;
     background-color: transparent;
@@ -141,62 +137,43 @@ body {
     /* background-size: fill; */
 }
 
-.middle-row-top {
-    z-index: 5;
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
-
-.middle-row-center, .middle-row-bottom {
-    margin-top: 50px;
-}
-
-.middle-row-bottom {
-    margin-bottom: 150px;
-}
-
-.profile-pic-col {
-    display: block;
-}
-
 .profile-pic {
-    display: block;
-    margin: 150px auto;
-    width: 150px;
+    /* margin: 150px auto; */
+    height: 250px;
+    width: 250px;
 }
 
-.about-me-container {
+.about-me-outer-wrapper {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 .contact-info-container {
-    height: 75px;
-    vertical-align: middle;
-    width: 90%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    flex-direction: row;
     flex-wrap: wrap;
 }
 
 .contact-item {
     flex: 50%;
     text-align: left;
-    line-height: 20px;
+    line-height: 1.8em;
+    font-size: 1.6em;
 }
 
 .sub-heading {
     text-align: center;
+    font-size: 2.4em;
 }
 
 .sub-heading p {
     color: slategray;
 }
 
-.about-me {
-    margin: 50px 0;
-    width: 90%;
+.about-me p {
+    font-size: 1.4em;
 }
 
 .section-head {
@@ -214,8 +191,37 @@ body {
     text-align: center;
 }
 
+.icons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(191, 183, 183, 0.25);
+    opacity: 0.5;
+    height: 25vh;
+    width: 100%;
+}
+
+.icons-container i {
+    margin: 0 6.25vw;
+}
+
+/* //PORTFOLIO */
+.title-head {
+    font-size: 2.4em;
+}
+
+/* ON NAV-LINK:HOVER CREATE JQUERY EFFECT OF SHOWING BELOW: */
+.title-head:after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 45px; /* Change this to whatever width you want. */
+    padding-top: 2px; /* This creates some space between the element and the border. */
+    border-bottom: 2px solid #8F212E; /* This creates the border. Replace black with whatever color you want. */
+}
+
 .card {
-    margin-top: 40px;
+    /* margin-top: 40px; */
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
@@ -228,6 +234,15 @@ body {
     display: flex;
     justify-content: flex-start;
     margin: 15px 0 10px 0;
+}
+
+.card {
+    margin: 0 auto;
+}
+
+.card-title {
+    min-height: 1.6em;
+    font-size: 1.4em;
 }
 
 .card-btn {
@@ -246,21 +261,28 @@ body {
     background-color: #8F212E;
 }
 
-.language-icons-container {
-    display: flex;
-    justify-content: center;
-    background-color: rgba(191, 183, 183, 0.25);
-    opacity: 0.5;
-    height: 25vh;
-    width: 100%;
+/* //ROWS & FOOTER// */
+.upper-middle-row {
+    z-index: 5;
+    margin-top: 85px;
+    margin-bottom: 50px;
 }
 
-.language-icons-container i {
-    margin: 10vh;
+.middle-row-center, .middle-row-bottom {
+    margin-top: 40px;
+}
+
+.middle-row-center {
+    min-height: 50px;
+}
+
+.middle-row-bottom {
+    margin-bottom: 75px;
 }
 
 .footer-flex {
     font-family: 'Source Code Pro', monospace;
+    font-size: 1.8em;
     max-width: 650px;
     display: flex;
     justify-content: space-around;
