@@ -233,28 +233,35 @@ body {
 .port-buttons {
     display: flex;
     justify-content: flex-start;
-    margin: 15px 0 10px 0;
 }
 
 .card {
     margin: 0 auto;
+    width: 22.75rem;
+    min-height: 275px;
 }
 
 .card-title {
-    min-height: 1.6em;
-    font-size: 1.4em;
+    min-height: 1.6rem;
+    font-size: 1.8rem;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .card-btn {
     background-color: #BD3D48;
     border: none;
     flex: .40;
-    margin-right: 20px;
+    font-size: 1.4rem;
 }
 
 .card-btn-git {
     background-color: #171516;
-    flex: .40;
+    margin-left: 20px;
 }
 
 .card-btn:hover, .card-btn:active {
