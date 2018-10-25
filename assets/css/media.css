@@ -18,6 +18,9 @@
         font-size: 1.4rem;
         min-width: 175px;
     }
+    .profile-pic-container {
+        margin-bottom: 1rem;
+    }
   }
 /* //SMARTPHONE LANDSCAPE */
   /* On screens that are at most 540px wide: */
@@ -30,6 +33,9 @@
     }
     .header-intro {
         font-size: 1.2rem;
+    }
+    .profile-pic-container {
+        margin-bottom: 2rem;
     }
     .profile-pic {
         height: 200px;
