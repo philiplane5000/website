@@ -112,6 +112,10 @@ body {
     top: -125px;
 }
 
+.about-p {
+    font-size: 1.8rem;
+}
+
 [href="#about-me"] {
     color: white;
     text-decoration: none;
@@ -137,10 +141,16 @@ body {
     /* background-size: fill; */
 }
 
+.profile-pic-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .profile-pic {
-    /* margin: 150px auto; */
-    height: 250px;
-    width: 250px;
+    height: 225px;
+    width: 225px;
+    border-radius: 50%
 }
 
 .about-me-outer-wrapper {
@@ -219,12 +229,6 @@ body {
     padding-top: 2px; /* This creates some space between the element and the border. */
     border-bottom: 2px solid #8F212E; /* This creates the border. Replace black with whatever color you want. */
 }
-
-.card {
-    /* margin-top: 40px; */
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-}
   
 .card:hover {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
@@ -237,8 +241,11 @@ body {
 
 .card {
     margin: 0 auto;
-    width: 22.75rem;
+    margin-top: 1.8rem;
+    width: 23.45rem;
     min-height: 275px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
 .card-title {
