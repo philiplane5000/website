@@ -59,6 +59,15 @@
     .hello {
         display: none;
     }
+    .jumbo-blurb-container {
+        display: none;
+    }
+    .top-row {
+        height: 100px;
+    }
+    .upper-middle-row {
+        margin-top: 50px;
+    }
   }
 
   /* //320px smart phones */
