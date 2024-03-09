@@ -1,0 +1,87 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Include only parts of Bootstrap
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import '@bootstrap/scss/functions';
+
+// 2. Include any default variable overrides here
+@import 'variable-overrides';
+
+// 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
+@import '@bootstrap/scss/variables';
+@import '@bootstrap/scss/variables-dark';
+
+// 4. Include any default map overrides here
+
+// 5. Include remainder of required parts
+@import '@bootstrap/scss/maps';
+@import '@bootstrap/scss/mixins';
+@import '@bootstrap/scss/root';
+
+// 6. Optionally include any other parts as needed
+@import '@bootstrap/scss/utilities';
+@import '@bootstrap/scss/reboot';
+@import '@bootstrap/scss/type';
+@import '@bootstrap/scss/images';
+@import '@bootstrap/scss/containers';
+@import '@bootstrap/scss/grid';
+@import '@bootstrap/scss/helpers';
+@import '@bootstrap/scss/buttons';
+// @import '@bootstrap/scss/nav';
+@import '@bootstrap/scss/navbar';
+
+// 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+@import '@bootstrap/scss/utilities/api';
+
+// 8. Add additional custom code here
+:root {
+  /* Theme Colors */
+  --soft-white: #eeefea;
+  --darkest-blue: #1d3a58;
+  --slate-blue: #314658;
+  --preppy-blue: #d1eaff;
+  --cadet-blue: #3bb1be;
+  --aqua-marine: #80f3f1;
+  --soft-white: #eeefea;
+  --custom-code-color: oklab(80% 65% 15%);
+
+  // bs overrides
+  --bs-body-color: #eeefea;
+  // --bs-primary: #80f3f1;
+  // --bs-primary-rgb: 128, 243, 241;
+}
+
+/* || Typography */
+// p {
+//     line-height: 1.65;
+//     margin-bottom: 1rem;
+// }
+
+code {
+  color: var(--custom-code-color);
+}
+
+/* || Custom Navbar */
+.navbar {
+  position: absolute;
+  border-radius: 2rem;
+  top: 1rem;
+  left: 1rem;
+  right: 1rem;
+}
+
+/* || Gradients */
+.primary-diagonal-gradient {
+  background: linear-gradient(to bottom right, #126866, 25%, var(--darkest-blue));
+  // background: linear-gradient(to bottom right, var(--darkest-blue), 75%, var(--cadet-blue));
+}
+
+/* || Sub-Section Styles */
+#about-me {
+  margin-top: 6rem;
+  h1 {
+    font-size: calc(2.75rem + 3vw);
+    color: var(--white);
+  }
+}

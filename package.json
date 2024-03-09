@@ -1,0 +1,27 @@
+{
+  "name": "quantum-mango",
+  "author": "plane",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "wipe": "rm -rf dist",
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.3"
+  },
+  "devDependencies": {
+    "@types/bootstrap": "^5.2.10",
+    "sass": "^1.71.1",
+    "typescript": "^5.2.2",
+    "vite": "^5.1.4",
+    "vite-plugin-sass": "^0.1.0"
+  }
+}

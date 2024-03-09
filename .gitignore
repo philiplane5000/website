@@ -1,0 +1,24 @@
+# Dependency directories
+/node_modules/
+
+# Vite build output
+/dist/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE and text editor directories
+/.vscode/
+/.idea/
+*.sublime-workspace
+
+# Operating System generated files
+.DS_Store
+Thumbs.db
+
+# Debug logs from npm
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
