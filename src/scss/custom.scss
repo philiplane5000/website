@@ -38,11 +38,11 @@
 :root {
   /* Theme Colors */
   --soft-white: #eeefea;
-  --darkest-blue: #1d3a58;
+  --secondary-blue: #1d3a58;
   --slate-blue: #314658;
   --preppy-blue: #d1eaff;
   --cadet-blue: #3bb1be;
-  --aqua-marine: #80f3f1;
+  --primary-blue: #80f3f1;
   --soft-white: #eeefea;
   --custom-code-color: oklab(80% 65% 15%);
 
@@ -73,8 +73,8 @@ code {
 
 /* || Gradients */
 .primary-diagonal-gradient {
-  background: linear-gradient(to bottom right, #126866, 25%, var(--darkest-blue));
-  // background: linear-gradient(to bottom right, var(--darkest-blue), 75%, var(--cadet-blue));
+  background: linear-gradient(to bottom right, #126866, 25%, var(--secondary-blue));
+  // background: linear-gradient(to bottom right, var(--primary-blue), 75%, var(--cadet-blue));
 }
 
 /* || Sub-Section Styles */
