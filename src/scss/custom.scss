@@ -137,20 +137,20 @@ code {
 }
 
 [data-icon="phone"]:before {
-  background-image: url('phone.svg');
+  background-image: url('/phone.svg');
 }
 
 [data-icon="mail"]:before {
-  background-image: url('email.svg');
+  background-image: url('/email.svg');
   width: 1.25rem;
   height: 1rem;
   border-radius: 2px;
 }
 
 [data-icon="octocat"]:before {
-  background-image: url('octocat.svg');
+  background-image: url('/octocat.svg');
 }
 
 [data-icon="linkedin"]:before {
-  background-image: url('linkedin.svg');
+  background-image: url('/linkedin.svg');
 }
