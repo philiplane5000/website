@@ -3,13 +3,17 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Author: A.N. Author,
+    <meta
+      name="description"
+      content="Author: A.N. Author,
     Illustrator: P. Picture, Category: Books, Price: $17.99,
-    Length: 784 pages">    
+    Length: 784 pages"
+    />
     <meta
       name="description"
       content="Philip Lane's website showcasing his professional expertise as a full-stack web developer. Get in touch
-               with Philip using the contact form provided!">
+               with Philip using the contact form provided!"
+    />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <title>Philip Lane</title>
     <script type="module" src="ts/main.ts"></script>
@@ -18,11 +22,11 @@
     <!-- ---------------------------------------->
     <!-- Under Construction Banner ----------- -->
     <!-- ---------------------------------------->
-    <div class="w-100 py-3 bg-warning border border-danger">
+    <!-- <div class="w-100 py-3 bg-warning border border-danger">
       <p class="text-center text-uppercase fw-bold m-0 p-0 text-white">
         ( Currently Under Construction ) &mdash; Please check back soon!
       </p>
-    </div>
+    </div> -->
     <!-- As a link -->
     <header class="position-relative">
       <nav class="navbar border border-2 border-primary bg-secondary">
@@ -34,7 +38,7 @@
       </nav>
     </header>
     <main>
-      <section class="primary-diagonal-gradient pt-3">
+      <section class="bg-gradient--diagonal pt-3">
         <!-- ---------------------------------------->
         <!-- About Me ---------------------------- -->
         <!-- ---------------------------------------->
@@ -50,8 +54,11 @@
               <div class="d-flex justify-content-center justify-content-md-end my-2 my-md-0">
                 <!-- TODO: <picture> and <source srcset=""> variations (much smaller profile picture on sm. devices) -->
 
-                <div class="d-flex justify-content-center align-items-center border border-2 border-primary" style="width: 300px; height: 400px;">
-                    300x400
+                <div
+                  class="d-flex justify-content-center align-items-center border border-2 border-primary"
+                  style="width: 300px; height: 400px"
+                >
+                  300x400
                 </div>
                 <!-- <img
                   src="https://place-hold.it/300x400/eeefea.jpeg&fontsize=14"
@@ -88,11 +95,11 @@
       <!-- Technical Overview ------------------ -->
       <!-- ---------------------------------------->
       <div class="container" id="technical-overview">
-        <div class="row">
-          <div class="col-4 d-flex justify-content-center">
-            <div class="card_custom my-5" style="color: #1f1f1f">
+        <div class="row py-4">
+          <div class="col-sm-12 col-md-12 col-lg-4 d-flex justify-content-center py-3 py-lg-5">
+            <div class="highlight-card">
               <div class="d-flex justify-content-center">
-                <img src="/star.svg" alt="magnifying glass" class="img-fluid py-4" />
+                <img src="/star.svg" alt="magnifying glass" class="img-fluid pb-4" />
               </div>
               <p class="h3 text-center pb-4">Full-Stack Web Development</p>
               <p class="text-center">
@@ -101,40 +108,94 @@
               </p>
             </div>
           </div>
-          <div class="col-4 d-flex justify-content-center">
-            <div class="card_custom my-5" style="color: #1f1f1f">
+          <div class="col-sm-12 col-md-12 col-lg-4 d-flex justify-content-center py-3 py-lg-5">
+            <div class="highlight-card">
               <div class="d-flex justify-content-center position-relative">
                 <img
                   src="/eclipse.svg"
                   alt="magnifying glass"
-                  class="img-fluid py-4 position-relative"
+                  class="img-fluid pb-4 position-relative"
                   style="transform: translateX(50%)"
                 />
-                <img src="/eclipse.svg" alt="magnifying glass" class="img-fluid py-4 position-relative" />
+                <img src="/eclipse.svg" alt="magnifying glass" class="img-fluid pb-4 position-relative" />
                 <img
                   src="/eclipse.svg"
                   alt="magnifying glass"
-                  class="img-fluid py-4 position-relative"
+                  class="img-fluid pb-4 position-relative"
                   style="transform: translateX(-50%)"
                 />
               </div>
               <p class="h3 text-center pb-4">UI/UX Design</p>
               <p class="text-center">
-                Experienced in crafting visually appealing and user-friendly interfaces to enhance user satisfaction and
-                engagement.
+                Experienced crafting visually appealing, accessible, and user-friendly interfaces to enhance user
+                satisfaction and engagement.
               </p>
             </div>
           </div>
-          <div class="col-4 d-flex justify-content-center">
-            <div class="card_custom my-5" style="color: #1f1f1f">
+          <div class="col-sm-12 col-md-12 col-lg-4 d-flex justify-content-center py-3 py-lg-5">
+            <div class="highlight-card">
               <div class="d-flex justify-content-center">
-                <img src="/magnifying-glass.svg" alt="magnifying glass" class="img-fluid py-4" />
+                <img src="/magnifying-glass.svg" alt="magnifying glass" class="img-fluid pb-4" />
               </div>
               <p class="h3 text-center pb-4">Cloud Computing</p>
               <p class="text-center">
-                Familiarity with cloud platforms such as AWS or Azure, enabling efficient deployment and management of
-                web applications in scalable cloud environments.
+                Familiarity with cloud computing, enabling efficient deployment and management of web applications in
+                scalable cloud environments.
               </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ---------------------------------------->
+      <!-- Get in Touch ------------------------ -->
+      <!-- ---------------------------------------->
+
+      <div class="bg-gradient--undulating">
+        <div class="container" id="get-in-touch">
+          <div class="row py-4">
+            <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 py-3 py-lg-5">
+              <h2>Get in Touch</h2>
+              <p>
+                Have a question or even a project in mind? I'd love to hear from you. Let's chat and make something
+                amazing together.
+              </p>
+            </div>
+            <div class="col-sm-12 col-md-6 offset-lg-1 col-lg-4 offset-xl-1 col-xl-5 py-3 py-lg-5">
+              <ul class="list-unstyled d-block">
+                <li id="phone" class="d-inline-flex align-items-center me-4 me-md-3" data-icon="phone">
+                  +1 (619) 455-3233
+                </li>
+                <li id="email" class="d-inline-flex align-items-center" data-icon="mail">
+                  <a href="mailto:philiptaft9@gmail.com" style="color: var(--bs-body-color)">philiptaft9@gmail.com</a>
+                </li>
+              </ul>
+              <!-- TODO: Remove list implementation as they do not pass Lighthouse Accessibility -->
+              <div class="d-flex justify-content-start align-items-center mt-4">
+                <a
+                  href="https://github.com/philiplane5000"
+                  target="_blank"
+                  class="social-icon d-flex align-items-center"
+                  data-icon="octocat"
+                >
+                  <span class="visually-hidden">GitHub</span>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/philip-r-lane/"
+                  target="_blank"
+                  class="social-icon d-flex align-items-center ms-4"
+                  data-icon="linkedin"
+                >
+                  <span class="visually-hidden">LinkedIn</span>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 col-xl-2 py-3 py-lg-5 py-3">
+              <a href="mailto:philiptaft9@gmail.com" class="btn btn-secondary border border-primary w-100" style="border-radius: 2rem"
+                >Get In Touch</a
+              >
+              <a href="/LANE-Philip__03152024.pdf" class="btn btn-primary mt-3 w-100" style="border-radius: 2rem" target="_blank"
+                >Download Resume</a
+              >
             </div>
           </div>
         </div>
