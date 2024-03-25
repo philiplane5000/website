@@ -64,10 +64,25 @@
 }
 
 /* || Typography */
-// p {
-//     line-height: 1.65;
-//     margin-bottom: 1rem;
-// }
+p {
+  line-height: 1.65;
+  margin-bottom: 1rem;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  margin-bottom: 1.5rem;
+}
 
 code {
   color: var(--custom-code-color);
@@ -166,9 +181,18 @@ code {
   background-image: url('/linkedin.svg');
 }
 
-/* || Inquiry Form */
+/* || Get In Touch */
+
+#get-in-touch {
+  h2 {
+    font-size: calc(2rem + 1vw);
+    color: var(--white);
+  }
+}
+
 form[name="inquiry"] {
-  background-color: var(--cadet-blue);
+  // background-color: var(--cadet-blue);
+  background-color: rgba(59, 177, 190, 0.75);
 
   input,
   select {
@@ -178,35 +202,40 @@ form[name="inquiry"] {
   input,
   textarea {
     display: block;
-    // background-color: var(--soft-white);
-    background-color:var(--primary-blue);
+    background-color: var(--primary-blue);
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 0.875rem;
     line-height: 1.5;
     border: 1px solid var(--primary-blue);
     border-radius: 0.25rem;
     padding: 0.5rem 0.75rem;
-    // margin-bottom: 1rem;
     margin: 0 0 1rem 0;
   }
 
   input::placeholder,
   textarea::placeholder {
-    // padding-left: 0.5rem;
-    opacity: 0.85;
+    opacity: 0.825;
     color: var(--secondary-blue);
   }
 
   label {
-    padding: 0 0 0.75rem 0.75rem ;
+    padding: 0 0 0.75rem 0.75rem;
     color: var(--secondary-blue);
   }
 
-  input:focus, textarea:focus {
-    // color: #212529;
-    // background-color: #fff;
-    border-color: var(--custom-code-color);
-    box-shadow: 0 0 0 0.25rem rgba(255, 0, 136, 0.34);
+  input:focus,
+  textarea:focus {
+    border-color: var(--slate-blue);
+    // box-shadow: 0 0 0 0.25rem rgba(255, 0, 140, 0.34);
+    box-shadow: 0 0 0 0.2rem rgba(255, 45, 145, 0.45);
     outline: 0;
-  }  
+  }
+  button[type="submit"]{
+    border-width: 1.5px !important;
+  }
+  button[type="submit"]:focus {
+    // border-color: var(--custom-code-color) !important;
+    // border-width: 1.5px !important;
+    box-shadow: 0 0 0 0.25rem rgba(255, 45, 145, 0.55);
+  }
 }

@@ -12,6 +12,7 @@ export default defineConfig({
   // But if you have a unique structure, you might need to adjust your `build` options:
   build: {
     // entry: path.resolve(__dirname, 'src/index.html'),
+    emptyOutDir: true,
     outDir: path.resolve(__dirname, 'dist'),
     // assetsDir: path.resolve(__dirname, 'assets'),
   },  

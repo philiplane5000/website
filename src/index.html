@@ -5,12 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Author: A.N. Author,
-    Illustrator: P. Picture, Category: Books, Price: $17.99,
-    Length: 784 pages"
-    />
-    <meta
-      name="description"
       content="Philip Lane's website showcasing his professional expertise as a full-stack web developer. Get in touch
                with Philip using the contact form provided!"
     />
@@ -22,11 +16,11 @@
     <!-- ---------------------------------------->
     <!-- Under Construction Banner ----------- -->
     <!-- ---------------------------------------->
-    <!-- <div class="w-100 py-3 bg-warning border border-danger">
+    <div class="w-100 py-3 bg-warning border border-danger">
       <p class="text-center text-uppercase fw-bold m-0 p-0 text-white">
-        ( Currently Under Construction ) &mdash; Please check back soon!
+        Currently Under Construction &mdash; Please check back soon!
       </p>
-    </div> -->
+    </div>
     <!-- As a link -->
     <header class="position-relative">
       <nav class="navbar border border-2 border-primary bg-secondary">
@@ -154,19 +148,27 @@
       <!-- ---------------------------------------->
       <!-- Get in Touch ------------------------ -->
       <!-- ---------------------------------------->
-
       <div class="bg-gradient--undulating">
         <div class="container" id="get-in-touch">
-          <div class="row py-4">
-            <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 py-3 py-lg-5">
+          <!-- <div class="row pt-5">
+            <div class="col">
               <h2>Get in Touch</h2>
-              <p>
-                Have a question or project in mind? I'd love to hear from you. Use the form below to
-                get in touch.
-              </p>
             </div>
-            <div class="col-sm-12 col-md-6 offset-lg-1 col-lg-4 offset-xl-1 col-xl-5 py-3 py-lg-5">
-              <ul class="list-unstyled d-block">
+          </div> -->
+          <div class="row py-5">
+            <div class="col-xs-12 col-sm-12 col-lg-4 py-4">
+              <h2>Get in Touch</h2>
+              <p>Have a question or maybe even a project in mind? I'd love to hear from you.</p>
+              <p>
+                Please note that I only collect peronal information that you voluntarily provide
+                when you submit an inquiry through the form on this website.
+              </p>
+              <p>
+                I may use the information you provide to respond to your inquiries, communicate with
+                you about my products or services, or to improve my website's content and
+                functionality.
+              </p>
+              <ul class="list-unstyled d-block mt-5">
                 <li
                   id="phone"
                   class="d-inline-flex align-items-center me-4 me-md-3"
@@ -180,7 +182,6 @@
                   >
                 </li>
               </ul>
-              <!-- TODO: Remove list implementation as they do not pass Lighthouse Accessibility -->
               <div class="d-flex justify-content-start align-items-center mt-4">
                 <a
                   href="https://github.com/philiplane5000"
@@ -199,28 +200,29 @@
                   <span class="visually-hidden">LinkedIn</span>
                 </a>
               </div>
+              <!-- <div class="my-3 w-75">
+                <a
+                  href="mailto:philiptaft9@gmail.com"
+                  class="btn btn-secondary border border-primary w-100"
+                  style="border-radius: 2rem"
+                  >Get In Touch</a
+                >
+                <a
+                  href="/LANE-Philip__03152024.pdf"
+                  class="btn btn-primary mt-3 w-100"
+                  style="border-radius: 2rem"
+                  target="_blank"
+                  >Download Resume</a
+                >
+              </div> -->
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-3 col-xl-2 py-3 py-lg-5 py-3">
-              <a
-                href="mailto:philiptaft9@gmail.com"
-                class="btn btn-secondary border border-primary w-100"
-                style="border-radius: 2rem"
-                >Get In Touch</a
+            <div class="col-xs-12 col-sm-12 col-lg-7 offset-lg-1 py-4">
+              <form
+                name="inquiry"
+                action="https://api.philiplane.io"
+                method="post"
+                class="p-2 p-xs-2 p-sm-2 p-md-4 p-lg-5 rounded"
               >
-              <a
-                href="/LANE-Philip__03152024.pdf"
-                class="btn btn-primary mt-3 w-100"
-                style="border-radius: 2rem"
-                target="_blank"
-                >Download Resume</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="container" id="inquiry">
-          <div class="row">
-            <div class="col-12">
-              <form name="inquiry" action="https://api.philiplane.io" method="post" class="mb-5 px-5 py-5 rounded">
                 <div class="row">
                   <div class="col-sm-12 col-md-6">
                     <label for="firstName" class="visually-hidden">First name</label>
@@ -267,12 +269,26 @@
                 <div class="row">
                   <div class="col">
                     <label for="message" class="visually-hidden">Message</label>
-                    <textarea class="w-100" name="message" id="" cols="30" rows="4" placeholder="Share your message here"></textarea>
+                    <textarea
+                      class="w-100"
+                      name="message"
+                      id=""
+                      cols="30"
+                      rows="4"
+                      placeholder="Share your message here"
+                    ></textarea>
                   </div>
                 </div>
-                <div class="row justify-content-center">
-                  <div class="col-2">
-                    <button type="submit" class="btn btn-secondary border border-primary text-uppercase w-100 mt-3" style="border-radius: 2rem;">Submit</button>
+                <div class="row">
+                  <div class="col-12 d-flex justify-content-end">
+                    <button
+                      type="submit"
+                      class="btn btn-secondary border border-primary mt-3 px-4"
+                      style="border-radius: 2rem"
+                      disabled
+                    >
+                      Submit
+                    </button>
                   </div>
                 </div>
               </form>
