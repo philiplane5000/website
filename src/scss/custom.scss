@@ -2,24 +2,24 @@
 // Include only parts of Bootstrap
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+// Include functions first (so you can manipulate colors, SVGs, calc, etc)
 @import '@bootstrap/scss/functions';
 
-// 2. Include any default variable overrides here
+// Include any default variable overrides here
 @import 'variable-overrides';
 
-// 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
+// Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
 @import '@bootstrap/scss/variables';
 @import '@bootstrap/scss/variables-dark';
 
-// 4. Include any default map overrides here
+// Include any default map overrides here
 
-// 5. Include remainder of required parts
+// Include remainder of required parts
 @import '@bootstrap/scss/maps';
 @import '@bootstrap/scss/mixins';
 @import '@bootstrap/scss/root';
 
-// 6. Optionally include any other parts as needed
+// Optionally include any other parts as needed
 @import '@bootstrap/scss/utilities';
 @import '@bootstrap/scss/reboot';
 @import '@bootstrap/scss/type';
@@ -31,10 +31,21 @@
 // @import '@bootstrap/scss/nav';
 @import '@bootstrap/scss/navbar';
 
-// 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+// *** Include Forms //
+// @import '@bootstrap/scss/forms/floating-labels.scss';
+// @import '@bootstrap/scss/forms/form-check.scss';
+// @import '@bootstrap/scss/forms/form-control.scss';
+// @import '@bootstrap/scss/forms/form-range.scss';
+// @import '@bootstrap/scss/forms/form-select.scss';
+// @import '@bootstrap/scss/forms/form-text.scss';
+// @import '@bootstrap/scss/forms/input-group.scss';
+// @import '@bootstrap/scss/forms/labels.scss';
+// @import '@bootstrap/scss/forms/validation.scss';
+
+// Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
 @import '@bootstrap/scss/utilities/api';
 
-// 8. Add additional custom code here
+// Add additional custom code here
 :root {
   /* Theme Colors */
   --soft-white: #eeefea;
@@ -153,4 +164,49 @@ code {
 
 [data-icon="linkedin"]:before {
   background-image: url('/linkedin.svg');
+}
+
+/* || Inquiry Form */
+form[name="inquiry"] {
+  background-color: var(--cadet-blue);
+
+  input,
+  select {
+    appearance: none;
+  }
+
+  input,
+  textarea {
+    display: block;
+    // background-color: var(--soft-white);
+    background-color:var(--primary-blue);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+    border: 1px solid var(--primary-blue);
+    border-radius: 0.25rem;
+    padding: 0.5rem 0.75rem;
+    // margin-bottom: 1rem;
+    margin: 0 0 1rem 0;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    // padding-left: 0.5rem;
+    opacity: 0.85;
+    color: var(--secondary-blue);
+  }
+
+  label {
+    padding: 0 0 0.75rem 0.75rem ;
+    color: var(--secondary-blue);
+  }
+
+  input:focus, textarea:focus {
+    // color: #212529;
+    // background-color: #fff;
+    border-color: var(--custom-code-color);
+    box-shadow: 0 0 0 0.25rem rgba(255, 0, 136, 0.34);
+    outline: 0;
+  }  
 }
