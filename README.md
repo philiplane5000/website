@@ -1,6 +1,3 @@
-## [www.philiplane.io](https://www.philiplane.io)
-
-- Email: philiptaft9@gmail.com
-- Phone: +1(619)455-3233
+#### [www.philiplane.io](https://philiplane.io)
 
 ***This website is currently under construction***

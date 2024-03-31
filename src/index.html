@@ -168,15 +168,11 @@
                 you about my products or services, or to improve my website's content and
                 functionality.
               </p>
-              <ul class="list-unstyled d-block mt-5">
-                <li
-                  id="phone"
-                  class="d-inline-flex align-items-center me-4 me-md-3"
-                  data-icon="phone"
-                >
+              <ul class="list-unstyled d-block py-2">
+                <li class="d-inline-flex align-items-center me-4 me-md-3" data-icon="phone">
                   +1 (619) 455-3233
                 </li>
-                <li id="email" class="d-inline-flex align-items-center" data-icon="mail">
+                <li class="d-inline-flex align-items-center" data-icon="mail">
                   <a href="mailto:philiptaft9@gmail.com" style="color: var(--bs-body-color)"
                     >philiptaft9@gmail.com</a
                   >
@@ -217,16 +213,12 @@
               </div> -->
             </div>
             <div class="col-xs-12 col-sm-12 col-lg-7 offset-lg-1 py-4">
-              <form
-                name="inquiry"
-                action="https://api.philiplane.io"
-                method="post"
-                class="p-2 p-xs-2 p-sm-2 p-md-4 p-lg-5 rounded"
-              >
+              <form name="contact" class="px-3 py-4 px-md-4 py-md-4 rounded">
                 <div class="row">
                   <div class="col-sm-12 col-md-6">
                     <label for="firstName" class="visually-hidden">First name</label>
                     <input
+                      id="firstName"
                       name="firstName"
                       type="text"
                       class="w-100"
@@ -238,6 +230,7 @@
                   <div class="col-sm-12 col-md-6">
                     <label for="lastName" class="visually-hidden">Last name</label>
                     <input
+                      id="lastName"
                       name="lastName"
                       type="text"
                       class="w-100"
@@ -250,6 +243,7 @@
                 <div class="row">
                   <div class="col">
                     <input
+                      id="email"
                       name="email"
                       type="email"
                       class="w-100"
@@ -273,8 +267,9 @@
                   <div class="col">
                     <label for="message" class="visually-hidden">Message</label>
                     <textarea
-                      class="w-100"
+                      id="message"
                       name="message"
+                      class="w-100"
                       id=""
                       cols="30"
                       rows="4"
@@ -288,7 +283,6 @@
                       type="submit"
                       class="btn btn-secondary border border-primary mt-3 px-4"
                       style="border-radius: 2rem"
-                      disabled
                     >
                       Submit
                     </button>
