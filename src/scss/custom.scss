@@ -31,6 +31,9 @@
 // @import '@bootstrap/scss/nav';
 @import '@bootstrap/scss/navbar';
 
+@import '@bootstrap/scss/close';
+@import '@bootstrap/scss/modal';
+
 // *** Include Forms //
 // @import '@bootstrap/scss/forms/floating-labels.scss';
 // @import '@bootstrap/scss/forms/form-check.scss';
@@ -190,7 +193,7 @@ code {
   }
 }
 
-form[name="contact"] {
+form[name="inquiry"] {
   // background-color: var(--cadet-blue);
   background-color: rgba(59, 177, 190, 0.75);
 

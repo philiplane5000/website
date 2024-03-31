@@ -47,7 +47,6 @@
               <!-- <h1 class="text-uppercase">ABOUT ME</h1> -->
               <div class="d-flex justify-content-center justify-content-md-end my-2 my-md-0">
                 <!-- TODO: <picture> and <source srcset=""> variations (much smaller profile picture on sm. devices) -->
-
                 <div
                   class="d-flex justify-content-center align-items-center border border-2 border-primary"
                   style="width: 300px; height: 400px"
@@ -64,8 +63,8 @@
             <div class="col-xs-12 col-sm-12 col-md-7">
               <div class="py-2">
                 <p>
-                  A seasoned Full Stack Web Developer, I possess over five years of experience in
-                  crafting sophisticated web solutions. Skilled in a broad spectrum of technologies,
+                  A seasoned Full Stack Web Developer, I possess over five years of experience
+                  curating sophisticated web solutions. Skilled in a broad spectrum of technologies,
                   I excel in and enjoy both frontend and backend development.
                 </p>
                 <p>
@@ -213,7 +212,7 @@
               </div> -->
             </div>
             <div class="col-xs-12 col-sm-12 col-lg-7 offset-lg-1 py-4">
-              <form name="contact" class="px-3 py-4 px-md-4 py-md-4 rounded">
+              <form name="inquiry" class="px-3 py-4 px-md-4 py-md-4 rounded">
                 <div class="row">
                   <div class="col-sm-12 col-md-6">
                     <label for="firstName" class="visually-hidden">First name</label>
@@ -294,5 +293,33 @@
         </div>
       </div>
     </main>
+
+    <!-- Form Submission Modal -->
+    <div
+      class="modal fade"
+      id="formStatusModal"
+      tabindex="-1"
+      aria-labelledby="formStatusModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title text-dark fs-5" id="formStatusModalLabel">Thank you!</h1>
+            <button
+              type="button"
+              class="btn-secondary btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-dark">
+            Your inquiry has been received. You can expect to hear back from me soon.</div>
+          <div class="modal-footer">
+            <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Okay</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
