@@ -1,9 +1,8 @@
-import '../scss/custom.scss'
+import '../scss/custom.scss';
+import handleFormSubmit from './modules/form';
 
-// Import all of Bootstrap's JS
-// import * as bootstrap from 'bootstrap'
+const inquiryForm = document.querySelector('form[name="inquiry"]');
 
-// Import the Bootstrap plugins individually as needed
-// import { Tooltip, Toast, Popover } from 'bootstrap';
-
-console.info('[INFO] Under construction...');
+if (inquiryForm) {
+  inquiryForm.addEventListener('submit', handleFormSubmit);
+}
