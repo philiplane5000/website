@@ -1,6 +1,8 @@
 // TODO: Update the modal body content and title to reflect the actual status of the form submission
 import { Modal } from 'bootstrap';
 
+type FormStatus = 'success' | 'error';
+
 // The form input/textarea elements
 const FIRST_NAME_INPUT = document.querySelector('[name="firstName"]') as HTMLInputElement;
 const LAST_NAME_INPUT = document.querySelector('[name="lastName"]') as HTMLInputElement;
@@ -15,11 +17,33 @@ const FORM_STATUS_MODAL = new Modal('#formStatusModal', {
   backdrop: true,
 });
 
+function _updateFormModalContent(status: FormStatus): void {
+  const modalTitleEl = document.querySelector('.modal-title') as HTMLElement;
+  const modalBodyEl = document.querySelector('.modal-body') as HTMLElement;
+  const myEmailAddress: string = 'philiptaft9@gmail.com';
+
+  const statusMessages = {
+    success: {
+      title: 'Thank you!',
+      body: 'Your inquiry has been received and you can expect to hear back from me soon.',
+    },
+    error: {
+      title: 'Something went wrong...',
+      body: `I'm sorry, it looks like there's something wrong the inquiry form at the moment. Until this is resolved, please reach out directly via email at <a href="mailto:${myEmailAddress}" class="text-dark">${myEmailAddress}</a>.`,
+    },
+  };
+
+  modalTitleEl.textContent = statusMessages[status].title;
+  modalBodyEl.innerHTML = statusMessages[status].body;
+}
+
 // Utility to determine the API endpoint based on the current environment
 function _getAPIEndpoint(): URL {
+  const PORT: number = 3000; /* Verify the PORT (default for locally running Lambda is currently 3000) */
+  
   const apiEndpoint: URL =
     window.location.hostname === 'localhost'
-      ? new URL('http://localhost:3000/contact') /* Verify the PORT (Lambda default is 3000) */
+      ? new URL(`http://localhost:${PORT}/contact`)
       : new URL('https://api.philiplane.io/contact');
 
   return apiEndpoint;
@@ -41,7 +65,6 @@ function _enableFormElements(): void {
   MESSAGE_TEXT_AREA.disabled = false;
   SUBMIT_BUTTON.disabled = false;
 }
-
 // Custom logic for handling/processing the form submission and updating the UI
 export default async function handleFormSubmit(event: Event) {
   // Prevent the browser-default form submission as we are handling this programatically
@@ -56,7 +79,7 @@ export default async function handleFormSubmit(event: Event) {
 
   try {
     // Send the form data to the Contacts API
-    const response = await fetch(apiEndpoint, {
+    const response: Response = await fetch(apiEndpoint, {
       method: 'POST',
       body: JSON.stringify(Object.fromEntries(formData)),
     });
@@ -65,14 +88,20 @@ export default async function handleFormSubmit(event: Event) {
       throw new Error(`Error during form submission: ${response.status}`);
     }
 
-    // Reset the form after submission
-    form.reset();
+    // Update the modal to inform the user of successful submission
+    _updateFormModalContent('success');
     FORM_STATUS_MODAL.show();
-
-    // Re-enable all of the form elements after submission
+    // Clear and re-enable the form after submission
+    form.reset();
     _enableFormElements();
   } catch (error) {
+    // Log the error to the console for debugging purposes
     console.error('error', error);
+    // Update the modal to inform the user of error during submission
+    _updateFormModalContent('error');
+    FORM_STATUS_MODAL.show();
+    // Clear and re-enable the form after submission
+    form.reset();
     _enableFormElements();
   }
 }
