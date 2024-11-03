@@ -1,3 +1,1 @@
-#### [www.philiplane.io](https://philiplane.io)
-
-***This website is currently under construction***
+#### [https://www.philiplane.io](https://www.philiplane.io)
