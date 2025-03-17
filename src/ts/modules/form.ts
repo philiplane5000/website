@@ -20,7 +20,7 @@ const FORM_STATUS_MODAL = new Modal('#formStatusModal', {
 function _updateFormModalContent(status: FormStatus): void {
   const modalTitleEl = document.querySelector('.modal-title') as HTMLElement;
   const modalBodyEl = document.querySelector('.modal-body') as HTMLElement;
-  const myEmailAddress: string = 'philiptaft9@gmail.com';
+  const myEmailAddress: string = 'philip@philiplane.io';
 
   const statusMessages = {
     success: {
@@ -40,7 +40,7 @@ function _updateFormModalContent(status: FormStatus): void {
 // Utility to determine the API endpoint based on the current environment
 function _getAPIEndpoint(): URL {
   const PORT: number = 3000; /* Verify the PORT (default for locally running Lambda is currently 3000) */
-  
+
   const apiEndpoint: URL =
     window.location.hostname === 'localhost'
       ? new URL(`http://localhost:${PORT}/contact`)
